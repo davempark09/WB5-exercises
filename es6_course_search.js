@@ -6,10 +6,10 @@ let courses=[
 {CourseId:"PROJ500",Title:"Introduction to Angular",Location:"Classroom 1",StartDate:"04/25/23",Fee:"50.00",}]
 
 //When does the PROG200 course start?
-// console.log(courses.find(course => course.CourseId === 'PROG200').StartDate)
+console.log(courses.find(course => course.CourseId === 'PROG200').StartDate)
 
 //What is the title of the PROJ500 course?
-// console.log(courses.find(course => course.CourseId === 'PROJ500').Title)
+console.log(courses.find(course => course.CourseId === 'PROJ500').Title)
 
 //What are the titles of the courses that cost $50 or less?
 
@@ -21,4 +21,5 @@ courses.filter(course => parseInt(course.Fee) <= 50).map(course => console.log(c
 courses.filter(course => parseInt(course.Fee) <= 50).forEach(course => console.log(course.Title))
 
 //What classes meet in "Classroom1"?
-// courses.filter(course => course.Location === 'Classroom 1').map(course => console.log(course.CourseId))
+courses.filter(course => course.Location === 'Classroom 1').map(course => console.log(course.CourseId))
+
